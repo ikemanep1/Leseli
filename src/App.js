@@ -3,11 +3,12 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './components/Home';
 import Admin from './components/Admin';
-import Contact from './components/Contact';
+import ContactForm from './components/ContactForm';
+import ConsultForm from './components/ContactForm';
 import WhatWeDo from './components/WhatWeDo';
 import RequestForm from './components/RequestForm';
 import Error404 from './components/Error404';
-import {Switch, Route} from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
 
 class App extends React.Component {
@@ -19,14 +20,17 @@ class App extends React.Component {
     return (
     <div className="App">
       <Header/>
+      <BrowserRouter>
       <Switch>
         <Route exact path='/' render={() =><Home/>}/>
-        <Route path='/admin' render={() =><admin/>}/>
-        <Route path='/contact' render={() =><contact/>}/>
-        <Route path='/whatwedo' render={() =><whatwedo/>}/>
-        <Route path='/requestform' render={() =><requestform/>}/>
+        <Route path='/admin' render={() =><Admin/>}/>
+        <Route path='/contactform' render={() =><ContactForm/>}/>
+        <Route path='/consultform' render={() =><ConsultForm/>}/>
+        <Route path='/whatwedo' render={() =><WhatWeDo/>}/>
+        <Route path='/requestform' render={() =><RequestForm/>}/>
         <Route component={Error404}/>
       </Switch>
+      </BrowserRouter>
       <Footer/>
     </div>
   );
