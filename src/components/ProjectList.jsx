@@ -21,6 +21,7 @@ let masterProjectList = [
 function ProjectList(props){
   return (
     <div>
+      <h2>Portfolio</h2>
       {masterProjectList.map((project, index) =>
       <Project client_name={project.client_name}
         description={project.description} />

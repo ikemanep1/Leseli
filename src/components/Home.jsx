@@ -7,8 +7,10 @@ import PropTypes from 'prop-types';
 function Home(){
   return (
     <div>
-      <p>this is the Home page</p>
+      <h1>Welcome</h1>
+      <p>We create custom content and marketing plans to help your business shine brightly. Leseli promises to encourage equity with all of our clients whom we consider our partners. We understand, as a collective, the importance of working together to bring forward a better and brighter future. We all have stories to tell. Let Leseli help you share yours.</p>
       <PackageList/>
+      <br/>
       <ProjectList/>
 
     </div>

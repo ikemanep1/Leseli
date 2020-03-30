@@ -11,12 +11,12 @@ let masterPackageList = [
   },
   {
     name: 'The Good Package',
-    description: 'This is a very good package and it does all the good things. You simply have to check out this good package.',
+    description: 'This is a very good package and it does all the good things. You definitely should check out this good package.',
     price: 3
   },
   {
     name: 'The Mediocre Package',
-    description: 'This is a package and it does all the things. You simply have to check out this package.',
+    description: 'This is a package and it does all the things. You probably could check out this package.',
     price: 1
   },
 ]
@@ -24,6 +24,7 @@ let masterPackageList = [
 function PackageList(props){
   return (
     <div>
+      <h2>Our Packages</h2>
       {masterPackageList.map((package_var, index) =>
       <Package name={package_var.name}
         description={package_var.description}

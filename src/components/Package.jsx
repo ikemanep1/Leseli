@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 function Package(props){
   return (
     <div>
-      <h2>{props.name} - ${props.price}</h2>
+      <h3>{props.name} - ${props.price}</h3>
       <p>{props.description}</p>
     </div>
   )

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 function Project(props){
   return (
     <div>
-      <h2>{props.client_name}</h2>
+      <h3>{props.client_name}</h3>
       <p>{props.description}</p>
     </div>
   )
