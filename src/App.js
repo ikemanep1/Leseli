@@ -7,7 +7,7 @@ import Contact from './components/Contact';
 import WhatWeDo from './components/WhatWeDo';
 import RequestForm from './components/RequestForm';
 import Error404 from './components/Error404';
-import {Switch, Route} from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
 
 class App extends React.Component {
@@ -19,14 +19,16 @@ class App extends React.Component {
     return (
     <div className="App">
       <Header/>
+      <BrowserRouter>
       <Switch>
         <Route exact path='/' render={() =><Home/>}/>
-        <Route path='/admin' render={() =><admin/>}/>
-        <Route path='/contact' render={() =><contact/>}/>
-        <Route path='/whatwedo' render={() =><whatwedo/>}/>
-        <Route path='/requestform' render={() =><requestform/>}/>
+        <Route path='/admin' render={() =><Admin/>}/>
+        <Route path='/contact' render={() =><Contact/>}/>
+        <Route path='/whatwedo' render={() =><WhatWeDo/>}/>
+        <Route path='/requestform' render={() =><RequestForm/>}/>
         <Route component={Error404}/>
       </Switch>
+      </BrowserRouter>
       <Footer/>
     </div>
   );
