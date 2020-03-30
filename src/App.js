@@ -21,15 +21,15 @@ class App extends React.Component {
     <div className="App">
       <Header/>
       <BrowserRouter>
-      <Switch>
-        <Route exact path='/' render={() =><Home/>}/>
-        <Route path='/admin' render={() =><Admin/>}/>
-        <Route path='/contactform' render={() =><ContactForm/>}/>
-        <Route path='/consultform' render={() =><ConsultForm/>}/>
-        <Route path='/whatwedo' render={() =><WhatWeDo/>}/>
-        <Route path='/requestform' render={() =><RequestForm/>}/>
-        <Route component={Error404}/>
-      </Switch>
+        <Switch>
+          <Route exact path='/' render={() =><Home/>}/>
+          <Route path='/admin' render={() =><Admin/>}/>
+          <Route path='/contactform' render={() =><ContactForm/>}/>
+          <Route path='/consultform' render={() =><ConsultForm/>}/>
+          <Route path='/whatwedo' render={() =><WhatWeDo/>}/>
+          <Route path='/requestform' render={() =><RequestForm/>}/>
+          <Route component={Error404}/>
+        </Switch>
       </BrowserRouter>
       <Footer/>
     </div>
