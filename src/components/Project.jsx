@@ -1,12 +1,18 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
-function Project(){
-    return (
-        <div>
-            <p>this is the Project singular page.</p>
-        </div>
-    )
+function Project(props){
+  return (
+    <div>
+      <h3>{props.client_name}</h3>
+      <p>{props.description}</p>
+    </div>
+  )
+}
 
+Project.propTypes = {
+  client_name: PropTypes.string.isRequired,
+  description: PropTypes.string
 }
 
 export default Project;

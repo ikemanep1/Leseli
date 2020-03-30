@@ -1,26 +1,20 @@
 import React from "react";
 import PackageList from './PackageList';
 import ProjectList from './ProjectList';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import PropTypes from 'prop-types';
+// import { v4 } from 'uuid';
 
+function Home(){
+  return (
+    <div>
+      <h1>Welcome</h1>
+      <p>We create custom content and marketing plans to help your business shine brightly. Leseli promises to encourage equity with all of our clients whom we consider our partners. We understand, as a collective, the importance of working together to bring forward a better and brighter future. We all have stories to tell. Let Leseli help you share yours.</p>
+      <PackageList/>
+      <br/>
+      <ProjectList/>
 
-class Home extends React.Component {
-    constructor(props) {
-      super(props);
-      this.state = {}
-    }
-    render() {
-      return (
-      <div className="Home">
-        <BrowserRouter>
-        <Switch>
-          <Route path='/packagelist' render={() =><PackageList/>}/>
-          <Route path='/projectlist' render={() =><ProjectList/>}/>
-        </Switch>
-        </BrowserRouter>
-      </div>
-    );
-    }
-  }
+    </div>
+  )
 
-  export default Home;
+export default Home;
+
