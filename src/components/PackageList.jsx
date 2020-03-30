@@ -1,4 +1,5 @@
 import React from "react";
+import Package from './Package';
 
 function PackageList(){
     return (
