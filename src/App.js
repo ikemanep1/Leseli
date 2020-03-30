@@ -3,7 +3,8 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './components/Home';
 import Admin from './components/Admin';
-import Contact from './components/Contact';
+import ContactForm from './components/ContactForm';
+import ConsultForm from './components/ContactForm';
 import WhatWeDo from './components/WhatWeDo';
 import RequestForm from './components/RequestForm';
 import Error404 from './components/Error404';
@@ -23,7 +24,8 @@ class App extends React.Component {
       <Switch>
         <Route exact path='/' render={() =><Home/>}/>
         <Route path='/admin' render={() =><Admin/>}/>
-        <Route path='/contact' render={() =><Contact/>}/>
+        <Route path='/contactform' render={() =><ContactForm/>}/>
+        <Route path='/consultform' render={() =><ConsultForm/>}/>
         <Route path='/whatwedo' render={() =><WhatWeDo/>}/>
         <Route path='/requestform' render={() =><RequestForm/>}/>
         <Route component={Error404}/>
