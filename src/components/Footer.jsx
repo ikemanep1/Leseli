@@ -29,9 +29,9 @@ function Footer(){
   }
   return (
     <div style={footerStyle}>
-    <a href="facebook.com" ><Button style={buttonColors}>Facebook</Button></a>
-    <a href="twitter.com" ><Button style={buttonColors}>Twitter</Button></a>
-    <a href="instagram.com" ><Button style={buttonColors}>Instagram</Button></a>
+    <a href="http://facebook.com" ><Button style={buttonColors}>Facebook</Button></a>
+    <a href="http://twitter.com" ><Button style={buttonColors}>Twitter</Button></a>
+    <a href="http://instagram.com" ><Button style={buttonColors}>Instagram</Button></a>
     </div>
   );
 }
