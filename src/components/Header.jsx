@@ -5,7 +5,7 @@ import logo from '../img/logo.png';
 
 function Header(){
   const headerStyle = {
-    backgroundColor: "#99ccff",
+    backgroundColor: "#345065",
     padding: "5px",
     textDecoration: 'none',
     textAlign: 'center',
@@ -13,8 +13,6 @@ function Header(){
     borderBottom: '3px solid #4da6ff',
     color: '#cc6699',
     fontSize: "20px",
-    borderBottomRightRadius: '80px',
-    borderBottomLeftRadius: '80px',
   }
   const navButtons = {
     display: 'flex',

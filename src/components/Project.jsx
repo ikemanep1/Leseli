@@ -5,7 +5,7 @@ function Project(props){
   const projectSingular = {
     margin: '40px',
     textAlign: 'center',
-    backgroundColor: "#99ccff",
+    backgroundColor: "#3366ff",
     padding: '20px',
     borderRadius: '100px',
     border: '3px solid #4da6ff',
