@@ -1,6 +1,6 @@
 body {
-  background-color: #ffdae4;
-  background-image: url('./img/tree.jpg');
-  background-repeat: no-repeat;
-  background-size: 200%;
+  background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png");
+  background-color: rgb(0, 3, 33);
+  /* background-size: 1%; */
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
