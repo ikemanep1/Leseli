@@ -19,13 +19,28 @@ let masterProjectList = [
 ]
 
 function ProjectList(props){
+  const itemStyles = {
+    margin: '40px',
+    textAlign: 'center',
+    backgroundColor: "#99ccff",
+    padding: '20px',
+    borderRadius: '100px',
+    border: '3px solid #4da6ff',
+    color: '#fdfdff',
+  }
+  const itemGrid = {
+    display: 'grid',
+    gridTemplateColumns: '1fr 1fr'
+  }
   return (
     <div>
-      <h2>Portfolio</h2>
+      <h2 style={itemStyles}>Portfolio</h2>
+    <div style={itemGrid}>
       {masterProjectList.map((project, index) =>
       <Project client_name={project.client_name}
         description={project.description} />
       )}
+    </div>
     </div>
   )
 

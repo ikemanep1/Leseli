@@ -22,14 +22,29 @@ let masterPackageList = [
 ]
 
 function PackageList(props){
+  const itemStyles = {
+    margin: '40px',
+    textAlign: 'center',
+    backgroundColor: "#99ccff",
+    padding: '20px',
+    borderRadius: '100px',
+    border: '3px solid #4da6ff',
+    color: '#fdfdff',
+  }
+  const itemGrid = {
+    display: 'grid',
+    gridTemplateColumns: '1fr 1fr'
+  }
   return (
     <div>
-      <h2>Our Packages</h2>
+      <h2 style={itemStyles}>Our Packages</h2>
+      <div style={itemGrid}>
       {masterPackageList.map((package_var, index) =>
       <Package name={package_var.name}
         description={package_var.description}
         price={package_var.price}/>
       )}
+      </div>
     </div>
   )
 
